@@ -1,0 +1,28 @@
+.caja-animada {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 10px;
+            
+            
+            animation-name: mover-caja;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+
+        
+        @keyframes mover-caja {
+            0% {
+                background-color: blue;
+                transform: translateX(0); /* Posición inicial */
+            }
+            50% {
+                background-color: red;
+            }
+            100% {
+                background-color: green;
+                transform: translateX(400px); /* Posición final */
+            }
+        }
